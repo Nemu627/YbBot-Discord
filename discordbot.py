@@ -22,5 +22,6 @@ bot.load_extension("jishaku")
 
 bot.load_extension("Cogs.event")
 bot.load_extension("Cogs.bot")
+bot.load_extension("Cogs.general")
 
 bot.run(token)
