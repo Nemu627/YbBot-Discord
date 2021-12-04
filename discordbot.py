@@ -14,6 +14,8 @@ bot = commands.Bot(
     case_insensitive=True
 )
 
+token = os.environ["token"]
+
 
 @bot.command('youtube')
 async def youtube(ctx):
@@ -81,11 +83,6 @@ async def fishington(ctx):
 
     await ctx.send(embed=discord.Embed(description=f'[Click here!](https://discord.gg/{code})', color=0x2F3136))
     
-token = os.environ["token"]
-
-def restart_bot():
-  os.execv(sys.executable, ['python'] + sys.argv)
-
 bot.load_extension("jishaku")
 
 bot.run(token)
