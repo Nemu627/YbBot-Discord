@@ -5,7 +5,7 @@ import os
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
 bot = commands.Bot(
-    command_prefix=["Ge!", "ge!"],
+    command_prefix=["Yb!", "yb!"],
     help_command=None,
     intents=intents,
     allowed_mentions=discord.AllowedMentions(replied_user=False, everyone=False),
