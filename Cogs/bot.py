@@ -10,7 +10,7 @@ class AppCmdBot(commands.Cog):
         
     @commands.command()
     async def help(self,ctx):
-        embed = discord.Embed(title="ヘルプ", description="comming soon ...", colour=0xff0000)
+        embed = discord.Embed(title="ヘルプ", description="ちわーっす！\nVoice Channel Activities BOT！Ybっす！", colour=0xff0000)
         embed.add_field(
             name=":robot: 》コマンドリスト",
             value="`help`：ヘルプを表示します。\n"
