@@ -14,7 +14,7 @@ class AppCmdBot(commands.Cog):
         embed.add_field(
             name=":robot: 》コマンドリスト",
             value="`help`：ヘルプを表示します。\n"
-                  "`ping`：GeBOTのping値を表示します。\n"
+                  "`ping`：YbBOTのping値を表示します。\n"
                   "`youtube`：YouTubeTogetherを開始します。\n"
                   "`betrayal`：Betrayal.ioを開始します。\n"
                   "`fishington`：Fishington.ioを開始します。",
