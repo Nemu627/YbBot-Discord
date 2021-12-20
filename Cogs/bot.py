@@ -16,7 +16,9 @@ class AppCmdBot(commands.Cog):
                   "`ping`：YbBOTのping値を表示します。\n"
                   "`youtube`：YouTubeTogetherを開始します。\n"
                   "`betrayal`：Betrayal.ioを開始します。\n"
-                  "`fishington`：Fishington.ioを開始します。",
+                  "`fishington`：Fishington.ioを開始します。\n"
+                  "`poker`：PokerNightを開始します。\n"
+                  "`chess`：ChessInTheParkを開始します。",
         )
         await ctx.reply(embed=embed)
 
