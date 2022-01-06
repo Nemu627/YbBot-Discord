@@ -42,6 +42,26 @@ class AppCmdEvent(commands.Cog):
                 colour=0xff0000,
             )
             await ctx.reply(embed=embed, mention_author=False)
+            
+    @commands.Cog.listener()
+    async def on_guild_join(self,guild):
+        servers = len(self.bot.guilds)
+        members = 0
+        for guild in self.bot.guilds:
+            members += guild.member_count - 1
+        await self.bot.change_presence(
+            activity=discord.Activity(name=f"Ga!help | {str(servers)}servers | {str(members)}users", type=3)
+        )
+        
+    @commands.Cog.listener()
+    async def on_guild_remove(self,guild):
+        servers = len(self.bot.guilds)
+        members = 0
+        for guild in self.bot.guilds:
+            members += guild.member_count - 1
+        await self.bot.change_presence(
+            activity=discord.Activity(name=f"Ga!help | {str(servers)}servers | {str(members)}users", type=3)
+        )
 
 def setup(bot):
     return bot.add_cog(AppCmdEvent(bot))
