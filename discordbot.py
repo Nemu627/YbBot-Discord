@@ -12,7 +12,6 @@ bot = commands.Bot(
     case_insensitive=True
 )
 
-
 token = os.environ["token"]
 
 def restart_bot():
